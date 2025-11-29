@@ -45,4 +45,4 @@ jobs:
         run: |
           pip install -r requirements.txt
       - name: "Deploy a gen 2 cloud function"
-        run: "gcloud functions deploy version-tracker --project=applications-dev-111111 --gen2 --runtime=python312 --region=europe-north1 --trigger-http --source=. --entry-point=main --max-instances=1 --memory=256MB --timeout=60s"
+        run: "gcloud functions deploy version-tracker --project=applications-dev-111111 --gen2 --runtime=python314 --region=me-central1 --trigger-http --source=. --entry-point=main --max-instances=1 --memory=256MB --timeout=60s"
