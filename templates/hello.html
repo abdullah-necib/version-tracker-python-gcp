@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<title>Hello from Flask</title>
+{% if person %}
+<h1>Hello {{ person }}!</h1>
+{% else %}
+<h1>Hello, World!</h1>
+{% endif %}
+<h2>This is for request object</h2>
+<hr />
+{% for key, value in req_dict.items() %}
+<li><strong>{{ key }}</strong>: {{ value }}</li>
+{% endfor %}
+<hr />
+{% for key, value in config_dict.items() %}
+<li><strong>{{ key }}</strong>: {{ value }}</li>
+{% endfor %}
+<hr />
+{% for key, value in session_dict.items() %}
+<li><strong>{{ key }}</strong>: {{ value }}</li>
+{% endfor %}
