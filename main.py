@@ -1,9 +1,8 @@
 import flask
 import functions_framework
 
-
 @functions_framework.http
-def main(request: flask_wrappers.Request) -> flask.Response:
+def main(request: flask.wrappers.Request) -> flask.Response:
     log_headline: str = f"main()"
     print(f"{log_headline} · Init")
 
